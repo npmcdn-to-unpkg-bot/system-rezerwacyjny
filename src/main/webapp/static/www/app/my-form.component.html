@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Logowanie</h1>
+    <form #heroForm="ngForm">
+      <div class="form-group">
+        <label for="password">Login</label>
+        <input type="text" class="form-control"  [(ngModel)]="authdata.login" ngControl="name" #login="ngForm">
+      </div>
+      <div class="form-group">
+        <label for="password">Hasło</label>
+        <input type="text" class="form-control" [(ngModel)]="authdata.password">
+      </div>
+      <button type="submit" class="btn btn-default" (click)="signIn()">Zaloguj</button>
+    </form>
+</div>

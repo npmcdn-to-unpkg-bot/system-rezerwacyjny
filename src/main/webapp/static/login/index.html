@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Set the base href -->
+    <base href="/jee7/static/login/">
+    
+    <title>Router Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Bootstrap Core CSS -->
+     <link href="startbootstrap-sb-admin-2-1.0.8/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Custom CSS -->
+     <link href="startbootstrap-sb-admin-2-1.0.8/dist/css/sb-admin-2.css" rel="stylesheet">
+     <!-- Custom Fonts -->
+     <link href="startbootstrap-sb-admin-2-1.0.8/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"  crossorigin="   anonymous"></script>
+    
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.16/system-polyfills.js"></script>
+    
+    <script src="https://code.angularjs.org/2.0.0-beta.7/angular2-polyfills.js"></script>
+
+    <!--<script src="node_modules/systemjs/dist/system.src.js"></script>-->
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+  
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.7/angular2.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.7/http.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.7/router.min.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.7/Rx.js"></script>
+
+    <script>
+      System.config({
+        transpiler: 'typescript', 
+        typescriptOptions: { emitDecoratorMetadata: true }, 
+        packages: {'app': {defaultExtension: 'ts'} , 'rxjs':{defaultExtension: 'js'} } 
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+    
+    <!-- jQuery -->
+    <script src="startbootstrap-sb-admin-2-1.0.8/bower_components/jquery/dist/jquery.min.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="startbootstrap-sb-admin-2-1.0.8/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="startbootstrap-sb-admin-2-1.0.8/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    
+    <!-- Custom Theme JavaScript -->
+    <script src="startbootstrap-sb-admin-2-1.0.8/dist/js/sb-admin-2.js"></script>
+  </head>
+
+  <body>
+  <div id="wrapper">
+    <my-app>loadingaaaa...</my-app>
+  </div>
+  </body>
+
+</html>
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
